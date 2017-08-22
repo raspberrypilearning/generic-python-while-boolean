@@ -1,19 +1,15 @@
-## Introduction
+The purpose of a **while** loop is to repeat code over and over while a condition is `True`. This is why while loops are sometimes referred to as **condition-controlled** loops.
 
-Add project description here. What will learners be making?
+In this example, the condition is a boolean variable we gave the name `keep_looping`. Its value is set as `True` at the top. The value can become `False`, which will make the condition of the while loop `False`. When this happens, the loop stops running.
 
-### What you will make
+```python
+keep_looping = True
 
-Add something here to showcase here, for example:
+while keep_looping:
+    print("I am in a loop")
+    command = input("Shall I keep looping?")
+    if command == "no":
+        keep_looping = False
+```
 
-<div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
-</div>
-
-Add instructions here. These should explain either how the finished project will work, or explain how to interact with the content above.
-
-### What you will learn
-
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
-
-+ [Add curriculum strand/level description.](https://www.raspberrypi.org/curriculum/strand/level)
+This kind of loop is useful in situations where you want to repeat code until a specific event happens. For example, you may want a program to continue running until someone types something to tell it to quit.
